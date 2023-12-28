@@ -2,6 +2,11 @@
 
 This began as [a sparse checkout](https://git-scm.com/docs/git-sparse-checkout) of just  `rp-rs/rp-hal-boards`; namely, the `rp-pico` portion. I have retained much of the code & text; see [the upstream repo](https://github.com/rp-rs/rp-hal-boards/) for details.
 
+## Status
+- `blinky`
+    - Does not work; [known issue](https://github.com/rp-rs/rp-hal/issues/376)
+        - pico-w led goes through the `cyw43` wifi chip
+
 ## Quick notes
 
 Compilation target, helpful tools, necessary minimum crates:
