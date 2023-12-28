@@ -1,9 +1,8 @@
 .idea/
-target
+rust/target
 Cargo.lock
 .vscode
 *.orig
-/target
 build
-boards/
-boards/rp-pico
+rust/boards/
+rust/boards/rp-pico
