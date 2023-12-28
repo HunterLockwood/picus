@@ -5,3 +5,4 @@ Cargo.lock
 *.orig
 /target
 build
+boards
