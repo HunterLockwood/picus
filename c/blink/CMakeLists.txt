@@ -8,7 +8,7 @@ project(aya)
 # initialize the Raspberry Pi Pico SDK
 pico_sdk_init()
 
-add_executable(aya
+add_executable(aya 
   aya.c
 )
 

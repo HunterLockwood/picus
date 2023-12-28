@@ -3,6 +3,8 @@
     learn Python?
 */
 
+#include "pico/stdlib.h"
+
 int main() {
   #ifndef PICO_DEFAULT_LED_PIN
   #warning This example requires a board with a regular LED.

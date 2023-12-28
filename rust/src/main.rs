@@ -1,15 +1,15 @@
 #![no_std]
 #![no_main]
 
-use rp_pico::entry;
 use embedded_hal::digital::v2::OutputPin;
 use panic_halt as _;
-use rp_pico::hal::prelude::*;
-use rp_pico::hal::pac;
+use rp_pico::entry;
 use rp_pico::hal;
+use rp_pico::hal::pac;
+use rp_pico::hal::prelude::*;
 
 #[entry]
-fn blink() -> ! {
+fn main() -> ! {
     let mut pac = pac::Peripherals::take().unwrap();
     let core = pac::CorePeripherals::take().unwrap();
     let mut watchdog = hal::Watchdog::new(pac.WATCHDOG);
@@ -19,8 +19,8 @@ fn blink() -> ! {
         pac.CLOCKS,
         pac.PLL_SYS,
         pac.PLL_USB,
-        &mut pac.RESETS
-        &mut watchdog
+        &mut pac.RESETS,
+        &mut watchdog,
     )
     .ok()
     .unwrap();
