@@ -12,5 +12,9 @@ add_executable(aya
   aya.c
 )
 
-target_link_libraries(aya pico_stdlib)
+target_link_libraries(aya 
+  pico_stdlib
+  pico_cyw43_arch_none
+)
+
 pico_add_extra_outputs(aya)
