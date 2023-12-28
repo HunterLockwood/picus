@@ -1,5 +1,3 @@
-*⛰️ 🌌 A [PICU](https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html) ad pico,  siderum arcana revelamus 🌌⛰️ *
-
 # Overview
 
 This began as [a sparse checkout](https://git-scm.com/docs/git-sparse-checkout) of just  `rp-rs/rp-hal-boards`; namely, the `rp-pico` portion. I have retained much of the code & text; see [the upstream repo](https://github.com/rp-rs/rp-hal-boards/) for details.
