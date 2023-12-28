@@ -5,4 +5,5 @@ Cargo.lock
 *.orig
 /target
 build
-boards
+boards/
+boards/rp-pico
